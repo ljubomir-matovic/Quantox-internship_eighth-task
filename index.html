@@ -10,7 +10,7 @@
 <body>
     <h1>Trello clone</h1>
     <section class="container">
-        <section class="backlog">
+        <section key="0">
             <h2>Backlog</h2>
             <section class="cards-container"></section>
             <form>
@@ -18,7 +18,7 @@
                 <button>Save Card</button>
             </form>
         </section>
-        <section class="in-progress">
+        <section key="1">
             <h2>In Progress</h2>
             <section class="cards-container" ></section>
             <form>
@@ -26,7 +26,7 @@
                 <button>Save Card</button>
             </form>
         </section>
-        <section class="complete">
+        <section key="2">
             <h2>Complete</h2>
             <section class="cards-container" ></section>
             <form>
@@ -34,7 +34,7 @@
                 <button>Save Card</button>
             </form>
         </section>
-        <section class="on-hold">
+        <section key="3">
             <h2>On Hold</h2>
             <section class="cards-container" ></section>
             <form>
@@ -42,6 +42,8 @@
                 <button>Save Card</button>
             </form>
         </section>
-<script src="./js/script.js"></script>
+    </section>
+    <script src="./js/card.js"></script>
+<script src="./js/formHandler.js"></script>
 </body>
 </html>
