@@ -4,11 +4,88 @@
     box-sizing: border-box;
 }
 body {
-    width: 100%;
+    min-width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url("../images/forest.jfif");
+    padding: 5px;
+}
+h1 {
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: gray 4px 4px 0;
+}
+.container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+}
+.container > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background-color: darkcyan;
+    padding: 5px;
+}
+.cards-container {
+    width: 100%;
+    min-height: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.draggable {
+    padding: 5px;
+    background-color: darkorchid;
+    width: 100%;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+h2 {
+    background-color: lightseagreen;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+input[type="text"] {
+    border: none;
+    background: lightblue;
+    outline: none;
+    width: 100%;
+    padding: 5px;
 }
 button {
+    background: cyan;
+    width: 100%;
     display: none;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+@media screen and (min-width: 1000px) {
+    .container > * {
+        flex: 1;
+    }
+}
+@media screen and (min-width: 500px) and(max-width:99px) {
+    .container > * {
+        width: 45vw;
+    }
+}
+@media screen and (max-width: 499px) {
+    .container > * {
+        width: 100%;
+    }
 }

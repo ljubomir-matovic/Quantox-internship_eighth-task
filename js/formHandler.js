@@ -18,7 +18,7 @@ var formHandler = function () {
             let value = input.value;
             input.value = "";
             this.toggleButton({ target: input });
-            console.log(value);
+            card.add(e.target.parentElement, value);
         })
     );
     return this;
